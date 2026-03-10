@@ -1,0 +1,113 @@
+{
+  "javascript_libraries": [
+    {
+      "name": "jQuery",
+      "versions": [
+        {
+          "version": "1.12.4",
+          "severity": "High",
+          "cvss": "8.8",
+          "vulnerability": "Cross-Site Scripting (XSS)",
+          "remediation": "Upgrade to jQuery 3.5.0 or later."
+        },
+        {
+          "version": "1.11.3",
+          "severity": "High",
+          "cvss": "8.8",
+          "vulnerability": "Cross-Site Scripting (XSS)",
+          "remediation": "Upgrade to jQuery 3.5.0 or later."
+        },
+        {
+          "version": "2.2.4",
+          "severity": "High",
+          "cvss": "8.8",
+          "vulnerability": "Cross-Site Scripting (XSS)",
+          "remediation": "Upgrade to jQuery 3.5.0 or later."
+        },
+        {
+          "version": "3.3.1",
+          "severity": "Medium",
+          "cvss": "6.1",
+          "vulnerability": "Cross-Site Scripting (XSS) via prototype pollution",
+          "remediation": "Upgrade to jQuery 3.5.0 or later."
+        }
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "versions": [
+        {
+          "version": "3.3.7",
+          "severity": "Medium",
+          "cvss": "6.1",
+          "vulnerability": "Cross-Site Scripting (XSS)",
+          "remediation": "Upgrade to Bootstrap 3.4.1 or later."
+        },
+        {
+          "version": "4.1.1",
+          "severity": "Medium",
+          "cvss": "6.1",
+          "vulnerability": "Cross-Site Scripting (XSS)",
+          "remediation": "Upgrade to Bootstrap 4.3.1 or later."
+        }
+      ]
+    },
+    {
+      "name": "AngularJS",
+      "versions": [
+        {
+          "version": "1.5.8",
+          "severity": "High",
+          "cvss": "8.1",
+          "vulnerability": "Sandbox Escape leading to XSS",
+          "remediation": "Upgrade to the latest Angular version. AngularJS is end-of-life."
+        },
+        {
+          "version": "1.6.4",
+          "severity": "High",
+          "cvss": "7.5",
+          "vulnerability": "Sandbox Escape leading to XSS",
+          "remediation": "Upgrade to the latest Angular version. AngularJS is end-of-life."
+        }
+      ]
+    },
+    {
+      "name": "lodash",
+      "versions": [
+        {
+          "version": "4.17.11",
+          "severity": "High",
+          "cvss": "7.4",
+          "vulnerability": "Prototype Pollution",
+          "remediation": "Upgrade to lodash 4.17.21 or later."
+        },
+        {
+          "version": "4.17.15",
+          "severity": "Medium",
+          "cvss": "6.5",
+          "vulnerability": "Prototype Pollution",
+          "remediation": "Upgrade to lodash 4.17.21 or later."
+        }
+      ]
+    },
+    {
+      "name": "moment",
+      "versions": [
+        {
+          "version": "2.18.1",
+          "severity": "High",
+          "cvss": "7.5",
+          "vulnerability": "Regular Expression Denial of Service (ReDoS)",
+          "remediation": "Upgrade to moment 2.29.2 or later, or switch to date-fns."
+        },
+        {
+          "version": "2.24.0",
+          "severity": "High",
+          "cvss": "7.5",
+          "vulnerability": "Regular Expression Denial of Service (ReDoS)",
+          "remediation": "Upgrade to moment 2.29.2 or later, or switch to date-fns."
+        }
+      ]
+    }
+  ]
+}

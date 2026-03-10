@@ -1,0 +1,63 @@
+{
+    "manifest_version": 3,
+    "name": "Web Vulnerability Scanner",
+    "version": "2.0.0",
+    "description": "An extension-based web vulnerability scanner aligned with OWASP Top 10 (2021).",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "webRequest",
+        "storage",
+        "declarativeNetRequest",
+        "cookies",
+        "tabs",
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "WVS"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "inject.js"
+            ],
+            "run_at": "document_start",
+            "world": "MAIN"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "inject.js",
+                "vuln_db.json",
+                "dashboard.html",
+                "dashboard.js",
+                "dashboard.css",
+                "chunks/*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
