@@ -189,6 +189,8 @@ npm run dev
 
 WebSentinel is a **passive** security analysis tool for educational and informational purposes. It does not send malicious payloads. Use responsibly and only on websites you are authorised to test.
 
+Also this is a Part of Academic Curriculum for Final Year Major Project.
+
 ---
 
 <div align="center">
